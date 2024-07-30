@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project roundasim with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="roundasim.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="dsg.rounda.SimHeadless"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ traffic-simulation.jar args4j-2.0.21.jar jcoord.jar jts.jar"/>
+            </manifest>
+            <fileset dir="war/WEB-INF/classes"/>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <zipfileset dir="lib" includes="traffic-simulation.jar"/>
+            <zipfileset dir="lib" includes="args4j-2.0.21.jar"/>
+            <zipfileset dir="lib" includes="jcoord.jar"/>
+            <zipfileset dir="lib" includes="jts.jar"/>
+        </jar>
+    </target>
+</project>

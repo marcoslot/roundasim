@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="roundasim">
+    <inherits name="dsg.RoundasimGUI" />
+    <entry-point class="dsg.roundagwt.SimGWT" />
+</module>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <inherits name="com.google.gwt.user.User" />
+    <inherits name="com.google.gwt.user.theme.clean.Clean" />
+    <inherits name="com.vividsolutions.JTS" />
+    <inherits name="jist.Swans" />
+    <inherits name="de.TrafficSimulation" />
+    <inherits name="uk.me.jstott.JCoord" />
+    <inherits name="dsg.GWTCompat" />
+    <source path="rounda" />
+</module>

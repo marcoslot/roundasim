@@ -1,0 +1,81 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:r="urn:import:dsg.roundagwt.gui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:c="urn:import:com.google.gwt.canvas.client"
+    xmlns:dnd="urn:import:org.vectomatic.dnd"
+    xmlns:file="urn:import:org.vectomatic.file">
+
+    <ui:with field="res" type="dsg.roundagwt.gui.SimGUIResources" />
+
+    <g:FlowPanel>
+    
+            <g:PushButton ui:field="saveButton" enabled="false"
+                title="Save scenario" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.saveIcon}" />
+                <g:downFace image="{res.saveIcon}" />
+            </g:PushButton>
+    
+            <g:PushButton ui:field="openButton" enabled="false"
+                title="Open scenario" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.openIcon}" />
+                <g:downFace image="{res.openIcon}" />
+            </g:PushButton>
+            
+            <g:PushButton ui:field="backgroundButton" enabled="true"
+                title="Open background" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.grassIcon}" />
+                <g:downFace image="{res.grassIcon}" />
+            </g:PushButton>
+            
+            <g:ToggleButton ui:field="createRoadButton" enabled="false"
+                title="Create road" addStyleNames="{res.style.toolBarButton} {res.style.buttonSeparator}">
+                <g:upFace image="{res.trackIcon}" />
+                <g:downFace image="{res.trackIcon}" />
+            </g:ToggleButton>
+
+            <g:PushButton ui:field="expandRoadButton" enabled="false"
+                title="Add a lane to the left of the road" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.expandRoadIcon}" />
+                <g:downFace image="{res.expandRoadIcon}" />
+            </g:PushButton>
+
+            <g:PushButton ui:field="glueButton" enabled="false"
+                title="Glue stuff together" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.glueIcon}" />
+                <g:downFace image="{res.glueIcon}" />
+            </g:PushButton>
+
+            <g:ToggleButton ui:field="createBuildingButton" enabled="false"
+                title="Create building" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.buildingIcon}" />
+                <g:downFace image="{res.buildingIcon}" />
+            </g:ToggleButton>
+
+            <g:PushButton ui:field="undoButton" enabled="false"
+                title="Undo" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.undoIcon}" />
+                <g:downFace image="{res.undoIcon}" />
+            </g:PushButton>
+
+            <g:ToggleButton ui:field="worldButton" enabled="false"
+                title="Measure world size" addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.worldIcon}" />
+                <g:downFace image="{res.worldIcon}" />
+            </g:ToggleButton>
+
+            <g:PushButton ui:field="textButton" enabled="false"
+                title="Export scenario as text"
+                addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.textIcon}" />
+                <g:downFace image="{res.textIcon}" />
+            </g:PushButton>
+
+            <g:ToggleButton ui:field="playButton" enabled="false"
+                title="Play the simulation"
+                addStyleNames="{res.style.toolBarButton}">
+                <g:upFace image="{res.playIcon}" />
+                <g:downFace image="{res.playIcon}" />
+            </g:ToggleButton>
+
+    </g:FlowPanel>
+</ui:UiBinder> 

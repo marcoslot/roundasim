@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:r="urn:import:dsg.roundagwt.gui"
+    xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:c="urn:import:com.google.gwt.canvas.client">
+
+    <ui:with field="res" type="dsg.roundagwt.gui.SimGUIResources"/>
+
+<g:FlowPanel>
+    <g:HorizontalPanel ui:field="container">
+        <c:Canvas ui:field="canvas" />
+        <r:VehicleConsoleGUI addStyleNames="{res.style.vehicleConsole}" ui:field="console" />
+    </g:HorizontalPanel>
+    <r:PlayerGUI ui:field="player"/>
+    <g:Label>Show</g:Label> 
+    <g:FlowPanel>
+        <g:CheckBox ui:field="showLasers">LIDAR</g:CheckBox>
+        <g:CheckBox ui:field="showMeasuredAreas2D">Empty 2D</g:CheckBox>
+        <g:CheckBox ui:field="showMeasuredAreas1D">Empty 1D</g:CheckBox>
+        <g:CheckBox ui:field="showMeasuredRoute1D">Empty route</g:CheckBox>
+        <g:CheckBox ui:field="showEmptyWeakConflicts">Empty weak conflicts</g:CheckBox>
+    </g:FlowPanel>
+    <g:FlowPanel>
+        <g:CheckBox ui:field="showSends">Sends</g:CheckBox>
+        <g:CheckBox ui:field="showReceives">Receives</g:CheckBox>
+        <g:CheckBox ui:field="showQueryAreas">Query area</g:CheckBox>
+        <g:CheckBox ui:field="showMembership">Membership result area</g:CheckBox>
+    </g:FlowPanel>
+</g:FlowPanel>
+</ui:UiBinder> 

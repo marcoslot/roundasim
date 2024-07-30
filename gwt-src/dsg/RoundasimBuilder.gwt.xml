@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="roundasim_builder">
+    <inherits name="dsg.RoundasimGUI" />
+    <inherits name="org.vectomatic.libgwtfile" />
+    <inherits name="com.google.gwt.i18n.I18N"/>
+    <entry-point class="dsg.roundagwt.SimBuilderGWT" />
+</module>

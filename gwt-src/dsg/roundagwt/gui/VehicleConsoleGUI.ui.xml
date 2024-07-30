@@ -1,0 +1,41 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+    <ui:with field="res" type="dsg.roundagwt.gui.SimGUIResources"/>
+	
+	<g:HTMLPanel>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">ID:</span>
+            <g:Label ui:field="idLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Received:</span>
+            <g:Label ui:field="receivedMessagesLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Sent:</span>
+            <g:Label ui:field="sentMessagesLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Allocated:</span>
+            <g:Label ui:field="allocatedDistanceLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Available:</span>
+            <g:Label ui:field="availableDistanceLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Track:</span>
+            <g:Label ui:field="trackLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Offset:</span>
+            <g:Label ui:field="offsetLabel" />
+        </div>
+        <div>
+            <span class="{res.style.consoleLabelHeader}">Velocity:</span>
+            <g:Label ui:field="velocityLabel" />
+        </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

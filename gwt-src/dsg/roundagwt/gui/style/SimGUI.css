@@ -1,0 +1,79 @@
+.hidden {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.clear {
+    clear: both;
+}
+
+.pointerCursor {
+	cursor: pointer;
+}
+
+.border {
+	border: solid 1px #E0E0E0;
+}
+
+.vehicleConsole {
+	margin: 10px;
+}
+
+.consoleLabelHeader {
+	font-weight: bold;
+}
+
+.inline {
+	display: inline;
+}
+
+.marginLeft {
+	margin-left: 5px;
+}
+
+.toolBarButton {
+	float: left;
+	display: inline;
+	width: 32px;
+	height: 32px;
+}
+
+.outText {
+	width: 750;
+	heigt: 550;
+}
+
+.markerPanel {
+	position: absolute;
+	background: white;
+	padding: 5px;
+	border: solid 1px black;
+}
+
+.dropPanel {
+	text-align: center;
+	padding-top: 100px;
+	width: 640px;
+	height: 380px;
+}
+
+.widthBox {
+    position: absolute;
+    width: 50px;
+}
+
+.heightBox {
+    position: absolute;
+    width: 50px;
+}
+
+.buttonSeparator {
+	margin-left: 10px;
+}

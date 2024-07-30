@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+    xmlns:r="urn:import:dsg.roundagwt.gui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+    xmlns:c="urn:import:com.google.gwt.canvas.client"
+    xmlns:dnd="urn:import:org.vectomatic.dnd"
+    xmlns:file="urn:import:org.vectomatic.file"
+    xmlns:dra="urn:import:dsg.roundagwt.gui">
+
+    <ui:with field="res" type="dsg.roundagwt.gui.SimGUIResources" />
+
+    <g:VerticalPanel>
+        <dra:BuilderButtonGUI ui:field="buttons" />
+        <g:SimplePanel ui:field="paletContainer">
+           <dra:BuilderPaletGUI ui:field="palet" />
+        </g:SimplePanel>
+    </g:VerticalPanel>
+</ui:UiBinder> 

@@ -1,0 +1,43 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:r="urn:import:dsg.roundagwt.gui" xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:c="urn:import:com.google.gwt.canvas.client"
+    xmlns:dnd="urn:import:org.vectomatic.dnd"
+    xmlns:file="urn:import:org.vectomatic.file">
+
+	<ui:with field="res" type="dsg.roundagwt.gui.SimGUIResources" />
+
+	<g:HTMLPanel>
+
+		<div class="{res.style.clear} {res.style.relative}">
+			<c:Canvas ui:field="canvas" addStyleNames="{res.style.border} {res.style.hidden}" />
+
+			<g:HTMLPanel ui:field="markerPanel1" addStyleNames="{res.style.markerPanel} {res.style.hidden}">
+				Marker 1:
+				<g:TextBox ui:field="marker1LatLong" addStyleNames="{res.style.inline}" />
+				lat,lon
+			</g:HTMLPanel>
+
+            <g:HTMLPanel ui:field="markerPanel2" addStyleNames="{res.style.markerPanel} {res.style.hidden}">
+                Marker 2:
+                <g:TextBox ui:field="marker2LatLong" addStyleNames="{res.style.inline}" />
+                lat,lon
+            </g:HTMLPanel>
+            
+            <dnd:DropPanel ui:field="dropPanel" addStyleNames="{res.style.border} {res.style.dropPanel}">
+                <g:Label>Drop your background here</g:Label>
+            </dnd:DropPanel>
+            
+            <g:TextBox ui:field="widthBox" addStyleNames="{res.style.hidden} {res.style.widthBox}" />
+            <g:TextBox ui:field="heightBox" addStyleNames="{res.style.hidden} {res.style.heightBox}" />
+            
+		</div>
+		
+		<g:Label ui:field="errorLabel" />
+		<file:FileUploadExt ui:field="fileChooser" addStyleNames="{res.style.hidden}"/>
+
+        <p>Use Shift to create curves.</p>
+
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
